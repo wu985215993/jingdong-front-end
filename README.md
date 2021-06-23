@@ -1,4 +1,4 @@
-# jingdong
+# 仿京东到家Vue全栈项目前端部分
 
 ## Project setup
 ```
