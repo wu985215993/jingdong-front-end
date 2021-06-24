@@ -58,7 +58,82 @@
     </div>
     <!-- 分割线 -->
     <div class="gap">
-
+    </div>
+    <!-- 附近店铺 -->
+    <div class="nearby">
+      <h3 class="nearby__title">附近店铺</h3>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png" class="nearby__item__img">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">起售￥0</span>
+            <span class="nearby__content__tag">基础运费￥5</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89元减4元运费券（每月3张）</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -94,7 +169,10 @@
     top: 0;
     bottom: 0.5rem;
     right: 0;
-    padding: 0 .18rem;
+    //底部滚动到了留白
+    padding: 0 .18rem .2rem .18rem;
+    //让内容区域纵向滚动
+    overflow-y: auto;
 
     .position {
       padding: .16rem .24rem .16rem 0;
@@ -181,6 +259,58 @@
     background-color: $content-bgColor;
     //wrapper有padding这样将其往外撑开
     margin: 0 -.18rem;
+  }
+
+  .nearby {
+    &__title {
+      margin: .16rem 0 .02rem 0;
+      font-family: PingFangSC-Medium;
+      font-size: .18rem;
+      color: $content-font-color;
+      font-weight: normal;
+
+    }
+
+    &__item {
+      display: flex;
+      padding-top: 0.12rem;
+
+      &__img {
+        margin-right: 0.16rem;
+        width: .56rem;
+        height: .56rem;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      padding-bottom: .12rem;
+      border-bottom: 1px solid $content-bgColor;
+
+      &__title {
+        color: $content-font-color;
+        line-height: 0.2rem;
+        font-size: 0.16rem;
+      }
+
+      &__tags {
+        margin-top: 0.08rem;
+        line-height: 0.18rem;
+        font-size: 0.13rem;
+        color: $content-font-color;
+      }
+
+      &__tag {
+        margin-right: 0.16rem;
+      }
+
+      &__highlight {
+        line-height: 0.18rem 0 0;
+        font-size: 0.13rem;
+        color: #E93B3B;
+        margin-top: 0.08rem;
+      }
+    }
   }
 
   .docker {
