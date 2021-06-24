@@ -1,20 +1,21 @@
 <template>
   <div id="app" class="docker">
-    <span class="docker__item">
+    <!-- 使用BEM CSS的命名规则 block__element--modifier(状态)-->
+    <span class="docker__item docker__item--active">
       <div class="iconfont">&#xe9db;</div>
-      首页
+      <div class="docker__title">首页</div>
     </span>
     <span class="docker__item">
       <div class="iconfont">&#xe638;</div>
-      购物车
+      <div class="docker__title">购物车</div>
     </span>
     <span class="docker__item">
       <div class="iconfont">&#xe60e;</div>
-      订单
+      <div class="docker__title">订单</div>
     </span>
     <span class="docker__item">
       <div class="iconfont">&#xe660;</div>
-      我的
+      <div class="docker__title">我的</div>
     </span>
   </div>
 </template>
@@ -30,11 +31,28 @@
     width: 100%;
     height: 0.49rem;
     border-top: 1px solid #F1F1F1;
-  }
 
-  .docker__item {
-    flex: 1;
-    text-align: center;
+    &__item {
+      // 等价于.docker__item scss的写法
+      flex: 1;
+      text-align: center;
+
+      .iconfont {
+        font-size: .18rem;
+        margin: .07rem 0 .02rem 0;
+      }
+
+      &--active {
+        //docker__item--active
+        color: #1FA4FC;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      transform: scale(.5, .5); //小技巧将20px改为10px
+      transform-origin: center top;
+    }
   }
 
 </style>
