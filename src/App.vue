@@ -5,6 +5,13 @@
       北京理工大学国防科技园2号楼10层
       <span class="iconfont position__notice">&#xe60a;</span>
     </div>
+    <div class="search">
+      <span class="iconfont">&#xe664;</span>
+      <span class="search__text">山姆会员商店优惠商品</span>
+    </div>
+    <div class="banner">
+      <img class="banner__img" src="./assets/banner.png" alt="" />
+    </div>
   </div>
   <!-- 底部导航栏 -->
   <div id="app" class="docker">
@@ -60,6 +67,40 @@
         font-size: .2rem;
         top: .17rem;
       }
+    }
+  }
+
+  .search {
+    margin-bottom: 0.12rem;
+    line-height: .32rem;
+    background-color: #F5F5F5;
+    color: #B7B7B7;
+    border-radius: .16rem;
+
+    .iconfont {
+      font-size: .16rem;
+      display: inline-block;
+      padding: 0 .08rem 0 .16rem;
+      position: relative;
+      top: 0.02rem;
+    }
+
+    &__text {
+      font-size: .14rem;
+      display: inline-block;
+    }
+  }
+
+  .banner {
+    //防止资源没加载完成的时候页面抖动
+    height: 0;
+    overflow: hidden; //超出不展示
+    //paddding-bottom的小hack技巧
+    padding-bottom: 25.4%; //这样代表屏幕宽的25.4% 等价于图片应该有的高度 因为图片的高宽比25.4百分之
+
+    //这样图片没加载的时候这个图片的位置也会被撑开
+    &__img {
+      width: 100%;
     }
   }
 
