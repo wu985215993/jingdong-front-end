@@ -11,7 +11,7 @@
       <span class="search__text">山姆会员商店优惠商品</span>
     </div>
     <div class="banner">
-      <img class="banner__img" src="./assets/banner.png" alt="" />
+      <img class="banner__img" src="http://www.dell-lee.com/imgs/vue3/banner.jpg" alt="" />
     </div>
     <!-- 图标区域 -->
     <div class="icons">
@@ -20,39 +20,39 @@
         <p class="icons__item__desc">超市便利</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/菜市场.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/菜市场.png" class="icons__item__img">
         <p class="icons__item__desc">菜市场</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/水果店.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/水果店.png" class="icons__item__img">
         <p class="icons__item__desc">水果店</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/鲜花.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/鲜花.png" class="icons__item__img">
         <p class="icons__item__desc">鲜花绿植</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/医药健康.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/医药健康.png" class="icons__item__img">
         <p class="icons__item__desc">医药健康</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/家居.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/家居.png" class="icons__item__img">
         <p class="icons__item__desc">家居时尚</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/蛋糕.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/蛋糕.png" class="icons__item__img">
         <p class="icons__item__desc">烘培蛋糕</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/签到.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/签到.png" class="icons__item__img">
         <p class="icons__item__desc">签到</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/大牌免运.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/大牌免运.png" class="icons__item__img">
         <p class="icons__item__desc">大牌免运</p>
       </div>
       <div class="icons__item">
-        <img src="./assets/红包.png" class="icons__item__img">
+        <img src="http://www.dell-lee.com/imgs/vue3/红包.png" class="icons__item__img">
         <p class="icons__item__desc">红包套餐</p>
       </div>
     </div>
