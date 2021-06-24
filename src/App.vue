@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <!-- 顶部地址栏 -->
     <div class="position">
       <span class="iconfont position__icon">&#xe64f;</span>
       北京理工大学国防科技园2号楼10层
@@ -12,7 +13,55 @@
     <div class="banner">
       <img class="banner__img" src="./assets/banner.png" alt="" />
     </div>
+    <!-- 图标区域 -->
+    <div class="icons">
+      <div class="icons__item">
+        <img src="./assets/超市.png" class="icons__item__img">
+        <p class="icons__item__desc">超市便利</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/菜市场.png" class="icons__item__img">
+        <p class="icons__item__desc">菜市场</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/水果店.png" class="icons__item__img">
+        <p class="icons__item__desc">水果店</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/鲜花.png" class="icons__item__img">
+        <p class="icons__item__desc">鲜花绿植</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/医药健康.png" class="icons__item__img">
+        <p class="icons__item__desc">医药健康</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/家居.png" class="icons__item__img">
+        <p class="icons__item__desc">家居时尚</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/蛋糕.png" class="icons__item__img">
+        <p class="icons__item__desc">烘培蛋糕</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/签到.png" class="icons__item__img">
+        <p class="icons__item__desc">签到</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/大牌免运.png" class="icons__item__img">
+        <p class="icons__item__desc">大牌免运</p>
+      </div>
+      <div class="icons__item">
+        <img src="./assets/红包.png" class="icons__item__img">
+        <p class="icons__item__desc">红包套餐</p>
+      </div>
+    </div>
+    <!-- 分割线 -->
+    <div class="gap">
+
+    </div>
   </div>
+
   <!-- 底部导航栏 -->
   <div id="app" class="docker">
     <!-- 使用BEM CSS的命名规则 block__element--modifier(状态)-->
@@ -104,6 +153,36 @@
     }
   }
 
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .16rem;
+
+    &__item {
+      width: 20%;
+
+      &__img {
+        display: block;
+        width: 0.4rem;
+        height: 0.4rem;
+        margin: 0 auto;
+      }
+
+      &__desc {
+        margin: .06rem 0 .16rem 0;
+        text-align: center;
+        color: $content-font-color;
+      }
+    }
+  }
+
+  .gap {
+    height: 0.1rem;
+    background-color: $content-bgColor;
+    //wrapper有padding这样将其往外撑开
+    margin: 0 -.18rem;
+  }
+
   .docker {
     display: flex;
     position: absolute;
@@ -113,7 +192,7 @@
     bottom: 0;
     width: 100%;
     height: 0.49rem;
-    border-top: .01rem solid #F1F1F1;
+    border-top: .01rem solid $content-bgColor;
     color: $content-font-color;
 
     &__item {
