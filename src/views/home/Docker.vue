@@ -1,28 +1,39 @@
 <template>
   <div id="app" class="docker">
     <!-- 使用BEM CSS的命名规则 block__element--modifier(状态)-->
-    <span class="docker__item docker__item--active">
-      <div class="iconfont">&#xe9db;</div>
-      <div class="docker__title">首页</div>
-    </span>
-    <span class="docker__item">
-      <div class="iconfont">&#xe638;</div>
-      <div class="docker__title">购物车</div>
-    </span>
-    <span class="docker__item">
-      <div class="iconfont">&#xe60e;</div>
-      <div class="docker__title">订单</div>
-    </span>
-    <span class="docker__item">
-      <div class="iconfont">&#xe660;</div>
-      <div class="docker__title">我的</div>
+    <span :class="{'docker__item':true,'docker__item--active': index === 0}" v-for="(item,index) in dockerList"
+      :key="item.icon">
+      <div class="iconfont" v-html="item.icon"></div>
+      <div class="docker__title">{{item.text}}</div>
     </span>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Docker'
+    name: 'Docker',
+    setup() {
+      const dockerList = [{
+          icon: '&#xe9db;',
+          text: '首页'
+        },
+        {
+          icon: '&#xe638;',
+          text: '购物车'
+        },
+        {
+          icon: '&#xe60e;',
+          text: '订单'
+        },
+        {
+          icon: '&#xe660;',
+          text: '我的'
+        }
+      ];
+      return {
+        dockerList
+      }
+    }
   }
 
 </script>
